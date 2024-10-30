@@ -1,0 +1,21 @@
+{
+    "name": "WPPlugines/Checkout_Manager",
+    "description": "Checkout Manager",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Al Imran Akash",
+            "email": "alimranakash.bd@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "WPPlugines\\Checkout_Manager\\" : "src/",
+            "WPPlugines\\Checkout_Manager\\App\\" : "app/"
+        },
+        "files": [ "inc/functions.php" ]
+    }
+}
+

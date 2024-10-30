@@ -1,0 +1,535 @@
+.imcm #wpcontent {
+    background-color: #fff;
+}
+#imcm-settings {
+/*background-color: #f3f7fa;*/
+}
+#imcm-setting-tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.imcm-setting-tabs-panel {
+    width: 15%;
+}
+.imcm-setting-tabs-content {
+    width: 78%;
+    padding: 0 30px;
+    max-width: 1080px;
+}
+.imcm-setting-heading h4 {
+    color: #483fb8;
+    font-size: 20px;
+    font-weight: 400;
+}
+.imcm-setting-tabs-panel {
+    background-color: #f3f7fa;
+    padding: 25px;
+}
+.imcm-setting-tabs-panel ul {
+    margin: 0;
+}
+.imcm-setting-tabs-panel ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px !important;
+}
+.imcm-setting-tabs-panel ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    background-color: #fff;
+    color: #b3b6c0;
+    box-shadow: none;
+    outline: none;
+}
+.imcm-setting-tabs-panel ul li.ui-tabs-active span,
+.imcm-setting-tabs-panel ul li.ui-tabs-active a {
+    color: #483fb8;
+}
+.imcm-setting-tabs-panel ul li.ui-tabs-active a:focus {
+    box-shadow: none;
+    outline: none;
+    transition: none;
+    border: none;
+}
+.imcm-setting-tabs-panel ul li span {
+    margin-right: 15px;
+}
+.imcm-setting-form-group .cx-desc {
+    font-size: 13px;
+    margin-top: 5px;
+    font-style: italic;
+}
+.imcm-setting-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f7fa;
+}
+.imcm-setting-button {
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+    border-color: #e8357c;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 7px 14px 20px 0px rgba(231,33,112,0.2);
+    color: #e8357c;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+.imcm-setting-button:hover {
+    background-color: #e8357c;
+    color: #fff;
+}
+.imcm-setting-save-button {
+    border-color: #ff9c91;
+    box-shadow: 7px 14px 20px 0px rgba(255,156,145,0.4);
+    color: #ff9c91;
+}
+.imcm-setting-save-button:hover {
+    color: #ffffff;
+    background-color: #fc5f62;
+}
+.imcm-setting-footer {
+    display: flex;
+    justify-content: end;
+    /* border-top: 1px solid #f3f7fa; */
+    /* padding-top: 16px; */
+    column-gap: 20px;
+}
+.imcm-setting-form-group {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #f3f7fa;
+}
+.imcm-setting-content {
+    padding: 40px 0;
+}
+.imcm-setting .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.imcm-setting .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.imcm-setting .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.imcm-setting .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.imcm-setting input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.imcm-setting input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.imcm-setting input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.imcm-setting .slider.round {
+    border-radius: 34px;
+}
+.imcm-setting .slider.round:before {
+    border-radius: 50%;
+}
+
+/* Checkout Fields Start */
+#woocm-checkout-panel {
+    margin-top: 40px;
+}
+.woocm-checkout-panel-tabs {}
+.woocm-checkout-panel-tabs-nav {}
+.woocm-checkout-panel-tabs-nav ul {
+    margin-top: 0;
+}
+.woocm-checkout-panel-tabs-nav ul li {
+    display: inline-block;
+    list-style: none;
+    outline: none;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.woocm-checkout-panel-tabs-nav ul li:last-child {
+    margin-right: 0px;
+}
+.woocm-checkout-panel-tabs-nav ul li a.woocm-tab-btn.active {
+    background-color: #fff;
+}
+.woocm-checkout-panel-tabs-nav ul li a {
+    background-color: #efefef;
+    padding: 15px 40px;
+    color: #562dd4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 8px 8px 0px 0px;
+    border-width: 5px 1px 0px 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.woocm-checkout-panel-tabs-nav ul li a:focus {
+    box-shadow: none;
+    outline: none;
+}
+.woocm-tab-content {
+    display: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 0px 8px 8px 8px;
+    padding: 20px;
+}
+.woocm-checkout-panel-tabs-content {}
+.woocm-checkout-panel-tabs-content .woocm-tab-content {}
+.woocm-checkout-panel-tabs-content .woocm-tab-content:first-child {
+    display: block;
+}
+.woocm-checkout-panel-tabs-content #woocm-billing {
+}
+.woocm-checkout-panel-tabs-content #woocm-shipping {}
+.woocm-checkout-panel-tabs-content #woocm-order {}
+.woocm-checkout-panel-tabs-content ul.woocm-list-wrap {
+    position: relative;
+}
+.woocm-list-wrap {}
+.woocm-list-wrap li.woocm-list-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e8e8e8;
+    border-radius: 6px 6px 6px 6px;
+    /* padding: 20px; */
+    margin-bottom: 10px;
+    position: relative;
+}
+.woocm-list-wrap li.woocm-list-item h4 {
+    margin: 0;
+    cursor: pointer;
+    padding: 18px;
+}
+.woocm-list-wrap li.woocm-list-item:last-child {
+    margin-bottom: 0px;
+}
+.woocm-list-wrap .woocm-item-wrap.woocm-accordion {
+    padding: 22px;
+}
+.woocm-item-wrap p {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.woocm-item-wrap.woocm-accordion p .woocm-item-label {}
+.woocm-item-wrap.woocm-accordion p .woocm-item-input-field {}
+.woocm-action-panel {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    bottom: 0;
+}
+.woocm-list-item .woocm-action-panel.disabled .woocm-item-remove {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.woocm-list-item .woocm-action-panel .woocm-item-remove {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: red;
+}
+.woocm-list-item input[type='text'],
+.woocm-list-item select {
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ece6ff;
+}
+/* Checkout Fields End */
+
+/* popup modal */
+.woocm-toggle-button-wrap {
+    width: 100%;
+/* max-width: 800px; */
+/* margin: 4em auto; */
+text-align: right;
+}
+.woocm-clone-item,
+.woocm-modal-toggle {
+    /* border-style: solid; */
+    border-width: 0px 0px 0px 2px;
+    border-color: #6a4adc;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 3px 7px 20px 0px #6a4adc40;
+    color: #6a4adc;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.woocm-modal-toggle:hover {
+    color: #ffffff;
+    background-color: #7325f9;
+}
+.woocm-clone-item-btn-panel {
+    text-align: right;
+}
+.woocm-clone-item {
+    padding: 12px 20px;
+    background: #7f5af3;
+    color: #fff;
+    border-radius: 0px;
+    cursor: pointer;
+    /* z-index: 999; */
+    position: relative;
+}
+.woocm-clone-item:hover {
+    background: #ff9c91;
+    color: #fff;
+}
+.woocm-clone-item-panel .woocm-action-panel {
+    right: 60px;
+}
+.woocm-clone-item-panel .woocm-item-remove {
+    display: none;
+}
+.woocm-clone-item-panel .woocm-modal-close {
+}
+.woocm-modal-toggle span {
+    font-size: 15px;
+    line-height: 22px;
+}
+.woocm-modal {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.woocm-modal.is-visible {
+    visibility: visible;
+}
+.woocm-modal-overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+.woocm-modal-overlay:hover {
+    background: hsla(0, 0%, 0%, 0.5);
+}
+.woocm-modal.is-visible .woocm-modal-overlay {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+.woocm-modal-wrapper {
+    position: absolute;
+    z-index: 9999;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 2px 4px 30px 0 #00000124;
+    border-radius: 11px;
+}
+.woocm-modal-transition {
+    transition: all 0.3s 0.12s;
+    transform: translateY(-10%);
+    opacity: 0;
+}
+.woocm-modal.is-visible .woocm-modal-transition {
+    transform: translateY(0);
+    opacity: 1;
+}
+.woocm-modal-header, .woocm-modal-content {
+    padding: 30px;
+}
+.woocm-modal-header {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+    border-bottom: 1px solid #e8e8e8;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    padding: 20px 30px;
+}
+.woocm-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: #aaa;
+    background: none;
+    border: 0;
+}
+.woocm-modal-close:hover {
+    color: #fff;
+}
+.woocm-modal-heading {
+    font-size: 1.125em;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.woocm-modal-content > *:first-child {
+    margin-top: 0;
+}
+.woocm-modal-content > *:last-child {
+    margin-bottom: 0;
+}
+#woocm-clone-billing-item .woocm-item-wrap,
+#woocm-clone-shipping-item .woocm-item-wrap,
+#woocm-clone-order-item .woocm-item-wrap {
+    display: block !important;
+}
+.woocm-item-wrap.woocm-hide p.woocm-item-field-type, .woocm-item-wrap.woocm-hide p.woocm-item-field-id {
+    display: none;
+}
+.woocm-clone-item-panel .woocm-list-item {
+    list-style: none;
+}
+.woocm-item-wrap p {
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+}
+.woocm-clone-item-panel .woocm-item-label {}
+.woocm-clone-item-panel .woocm-input-field {
+    padding: 6px 15px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ece6ff;
+}
+/*switch button*/
+.imcm .woocm-item-switch {
+    position: relative;
+    display: inline-block;
+    width: 49px;
+    height: 20px;
+}
+.woocm-item-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.woocm-item-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.woocm-item-slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.woocm-item-switch input:checked + .woocm-item-slider {
+    background-color: #562dd4;
+}
+.woocm-item-switch input:focus + .woocm-item-slider {
+    box-shadow: 0 0 1px #562dd4;
+}
+.woocm-item-switch input:checked + .woocm-item-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.woocm-item-slider.woocm-item-round {
+    border-radius: 34px;
+}
+.woocm-item-slider.woocm-item-round:before {
+    border-radius: 50%;
+}
+/*switch button*/
+
+/* popup modal */
+
+/*display-position*/
+.imcm-display-position-panel {}
+.imcm-display-position-panel p {}
+.imcm-display-position-panel p label {
+    width: 220px;
+    display: inline-block;
+}
+.imcm-display-position-panel p select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #e3e3e3;
+}
+/*display-position*/
+
+/*Style Options*/
+.imcm-style-options-panel {}
+.imcm-style-options-panel p {
+    margin: 50px 0;
+    display: flex;
+    gap: 50px;
+}
+.imcm-style-options-panel p label {
+    width: 220px;
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.imcm-style-options-panel p input {}
+/*Style Options*/
+/*display-position*/
